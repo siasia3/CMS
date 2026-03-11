@@ -43,6 +43,27 @@
 
 ## 구현 내용
 
+### 기본 구현
+
+**[콘텐츠 CRUD]**
+- [x] 콘텐츠 추가 (`POST /api/contents`)
+- [x] 콘텐츠 목록 조회 - 페이징 처리 (`GET /api/contents?page=0&size=10`)
+- [x] 콘텐츠 상세 조회 (`GET /api/contents/{id}`)
+- [x] 콘텐츠 수정 (`PATCH /api/contents/{id}`)
+- [x] 콘텐츠 삭제 (`DELETE /api/contents/{id}`)
+
+**[로그인 기능]**
+- [x] Spring Security + JWT 기반 로그인 구현
+- [x] Role: `ADMIN`(관리자), `USER`(사용자) 구분
+
+**[접근 권한]**
+- [x] 콘텐츠 수정/삭제는 작성자 본인만 가능
+- [x] `ADMIN`은 모든 콘텐츠 수정/삭제 가능
+- [x] 미인증 요청 → `401 Unauthorized`
+- [x] 권한 없는 요청 → `403 Forbidden`
+
+---
+
 ### 로그인 방식
 
 **JWT 기반 Stateless 인증**을 사용했습니다.
