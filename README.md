@@ -10,7 +10,7 @@
 | ORM | Spring Data JPA + QueryDSL 7.1 |
 | DB | H2 (In-Memory) |
 | Build | Gradle |
-| 기타 | Lombok, p6spy, Spring Validation, Spring Actuator |
+| 기타 | Lombok, Spring Validation |
 
 ---
 
